@@ -11,7 +11,7 @@ const Index = () => {
       <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <img src="/img/4bd1d9a9-ec9a-4982-8270-946945890983.jpg" alt="Avocado" className="w-8 h-8 rounded" />
+            <img src="/img/be2490ad-cc94-4352-8bcf-139806dfd0d8.jpg" alt="CalorieTracker" className="w-8 h-8 rounded" />
             <span className="font-bold text-xl text-primary font-['Montserrat']">CalorieTracker</span>
           </div>
           <div className="hidden md:flex items-center gap-6">
@@ -20,7 +20,7 @@ const Index = () => {
             <a href="#faq" className="text-muted-foreground hover:text-primary transition-colors">FAQ</a>
             <a href="#contacts" className="text-muted-foreground hover:text-primary transition-colors">Контакты</a>
           </div>
-          <Button className="bg-primary hover:bg-primary/90">Начать зарабатывать</Button>
+          <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">Начать зарабатывать</Button>
         </div>
       </nav>
 
@@ -35,7 +35,7 @@ const Index = () => {
             Рекомендуйте наше приложение для подсчета калорий по фото и получайте стабильный доход от каждого приведенного пользователя
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8 py-6">
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6">
               <Icon name="Zap" className="mr-2" />
               Стать партнером
             </Button>
@@ -145,32 +145,32 @@ const Index = () => {
           </div>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <img src="/img/3826e4c6-4216-43fe-8c66-250cdcd91972.jpg" alt="Приложение" className="w-full rounded-lg shadow-lg" />
+              <img src="/img/6f6a18eb-e07f-4808-9033-5f194d532963.jpg" alt="Приложение" className="w-full rounded-lg shadow-lg" />
             </div>
             <div className="space-y-8">
               <div className="flex gap-4">
-                <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold">1</div>
+                <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">1</div>
                 <div>
                   <h3 className="font-semibold text-lg mb-2 font-['Montserrat']">Фото еды</h3>
                   <p className="text-muted-foreground">Пользователь делает фото блюда на смартфон</p>
                 </div>
               </div>
               <div className="flex gap-4">
-                <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold">2</div>
+                <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">2</div>
                 <div>
                   <h3 className="font-semibold text-lg mb-2 font-['Montserrat']">ИИ анализ</h3>
                   <p className="text-muted-foreground">Искусственный интеллект определяет продукты и их количество</p>
                 </div>
               </div>
               <div className="flex gap-4">
-                <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold">3</div>
+                <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">3</div>
                 <div>
                   <h3 className="font-semibold text-lg mb-2 font-['Montserrat']">Точный расчет</h3>
                   <p className="text-muted-foreground">Автоматический подсчет калорий, белков, жиров и углеводов</p>
                 </div>
               </div>
               <div className="flex gap-4">
-                <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold">4</div>
+                <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">4</div>
                 <div>
                   <h3 className="font-semibold text-lg mb-2 font-['Montserrat']">Трекинг прогресса</h3>
                   <p className="text-muted-foreground">Ведение дневника питания и достижение целей</p>
@@ -323,7 +323,7 @@ const Index = () => {
       {/* CTA Section */}
       <section className="py-20 px-4 bg-gradient-to-r from-primary to-accent">
         <div className="container mx-auto text-center">
-          <img src="/img/2882670a-93b6-41cf-8c33-564bc657ed68.jpg" alt="Success" className="w-32 h-32 rounded-full mx-auto mb-8 shadow-lg" />
+          <img src="/img/c04a3e9c-a4e8-43e0-b90a-f1fd3e950bce.jpg" alt="Success" className="w-32 h-32 rounded-full mx-auto mb-8 shadow-lg" />
           <h2 className="text-4xl font-bold mb-6 text-white font-['Montserrat']">
             Начните зарабатывать уже сегодня
           </h2>
@@ -381,7 +381,7 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center gap-2 mb-4 md:mb-0">
-              <img src="/img/4bd1d9a9-ec9a-4982-8270-946945890983.jpg" alt="Avocado" className="w-6 h-6 rounded" />
+              <img src="/img/be2490ad-cc94-4352-8bcf-139806dfd0d8.jpg" alt="CalorieTracker" className="w-6 h-6 rounded" />
               <span className="font-bold text-primary font-['Montserrat']">CalorieTracker</span>
             </div>
             <p className="text-muted-foreground text-sm">
