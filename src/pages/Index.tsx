@@ -61,21 +61,21 @@ const Index = () => {
                   <Icon name="Dumbbell" className="text-primary" size={32} />
                 </div>
                 <CardTitle className="font-['Montserrat']">Фитнес-тренеры</CardTitle>
-                <CardDescription>Помогайте клиентам отслеживать питание и зарабатывайте на этом</CardDescription>
+                <CardDescription>Предлагайте клиентам точный подсчет КБЖУ по фото и получайте 250₽ с каждой месячной подписки</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="text-left space-y-2 text-sm">
                   <li className="flex items-center gap-2">
                     <Icon name="Check" className="text-primary" size={16} />
-Пассивный доход до 200к₽/мес
+50% комиссия с каждого клиента
                   </li>
                   <li className="flex items-center gap-2">
                     <Icon name="Check" className="text-primary" size={16} />
-Премиум сервис для клиентов
+Точность подсчета калорий 97%
                   </li>
                   <li className="flex items-center gap-2">
                     <Icon name="Check" className="text-primary" size={16} />
-Увеличение LTV клиентов
+Повышение удержания клиентов на 40%
                   </li>
                 </ul>
               </CardContent>
@@ -86,22 +86,22 @@ const Index = () => {
                 <div className="w-16 h-16 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
                   <Icon name="Apple" className="text-primary" size={32} />
                 </div>
-                <CardTitle className="font-premium-serif text-2xl gradient-text-luxury">Нутрициологи</CardTitle>
-                <CardDescription className="font-elegant text-base">Предложите клиентам AI-технологии будущего</CardDescription>
+                <CardTitle className="font-['Montserrat']">Нутрициологи</CardTitle>
+                <CardDescription>Дополните консультации высокотехнологичным инструментом анализа питания</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="text-left space-y-2 text-sm">
                   <li className="flex items-center gap-2">
                     <Icon name="Check" className="text-primary" size={16} />
-                    Профессиональный инструмент
+2000₽ за каждую годовую подписку
                   </li>
                   <li className="flex items-center gap-2">
                     <Icon name="Check" className="text-primary" size={16} />
-                    Пассивный доход
+База данных 50,000+ продуктов
                   </li>
                   <li className="flex items-center gap-2">
                     <Icon name="Check" className="text-primary" size={16} />
-                    Улучшение сервиса
+Детальная аналитика для пациентов
                   </li>
                 </ul>
               </CardContent>
@@ -112,22 +112,22 @@ const Index = () => {
                 <div className="w-16 h-16 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
                   <Icon name="Users" className="text-primary" size={32} />
                 </div>
-                <CardTitle className="font-['Montserrat']">Блогеры</CardTitle>
-                <CardDescription>Монетизируйте свою аудиторию в сфере ЗОЖ</CardDescription>
+                <CardTitle className="font-['Montserrat']">ЗОЖ-блогеры</CardTitle>
+                <CardDescription>Монетизируйте своих подписчиков через полезное приложение для правильного питания</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="text-left space-y-2 text-sm">
                   <li className="flex items-center gap-2">
                     <Icon name="Check" className="text-primary" size={16} />
-                    Релевантный контент
+Высокая конверсия в оплату 23%
                   </li>
                   <li className="flex items-center gap-2">
                     <Icon name="Check" className="text-primary" size={16} />
-                    Высокие комиссии
+Средний чек подписчика 2847₽
                   </li>
                   <li className="flex items-center gap-2">
                     <Icon name="Check" className="text-primary" size={16} />
-                    Долгосрочный доход
+Маркетинговая поддержка 24/7
                   </li>
                 </ul>
               </CardContent>
