@@ -209,29 +209,29 @@ const Index = () => {
               <div className="flex gap-4">
                 <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">1</div>
                 <div>
-                  <h3 className="font-semibold text-xl mb-3 font-premium-serif gradient-text-luxury">Одно фото</h3>
-                  <p className="text-foreground/70 font-elegant">Просто сфотографировать блюдо на смартфон</p>
+                  <h3 className="font-semibold text-lg mb-2 font-['Montserrat']">Определять КБЖУ в 1 клик</h3>
+                  <p className="text-muted-foreground">Отправляйте фото еды в бота и он рассчитает кбжу блюда с точностью 95%</p>
                 </div>
               </div>
               <div className="flex gap-4">
                 <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">2</div>
                 <div>
-                  <h3 className="font-semibold text-lg mb-2 font-['Montserrat']">ИИ анализ</h3>
-                  <p className="text-muted-foreground">Искусственный интеллект определяет продукты и их количество</p>
+                  <h3 className="font-semibold text-lg mb-2 font-['Montserrat']">Ежедневный и еженедельный анализ</h3>
+                  <p className="text-muted-foreground">Отслеживаете дневной и еженедельный кбжу прямо в боте</p>
                 </div>
               </div>
               <div className="flex gap-4">
                 <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">3</div>
                 <div>
-                  <h3 className="font-semibold text-lg mb-2 font-['Montserrat']">Точный расчет</h3>
-                  <p className="text-muted-foreground">Автоматический подсчет калорий, белков, жиров и углеводов</p>
+                  <h3 className="font-semibold text-lg mb-2 font-['Montserrat']">Персональные рекомендации</h3>
+                  <p className="text-muted-foreground">Бот проанализирует ваш рацион и расскажет, какие продукты нужно добавить, а от чего лучше воздержаться</p>
                 </div>
               </div>
               <div className="flex gap-4">
                 <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">4</div>
                 <div>
-                  <h3 className="font-semibold text-lg mb-2 font-['Montserrat']">Трекинг прогресса</h3>
-                  <p className="text-muted-foreground">Ведение дневника питания и достижение целей</p>
+                  <h3 className="font-semibold text-lg mb-2 font-['Montserrat']">Максимально легко в использовании</h3>
+                  <p className="text-muted-foreground">Не нужно скачивать отдельные приложения, персональный нутрициолог - уже в вашем кармане</p>
                 </div>
               </div>
             </div>
