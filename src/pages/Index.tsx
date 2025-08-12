@@ -11,8 +11,8 @@ const Index = () => {
       <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <img src="/img/be2490ad-cc94-4352-8bcf-139806dfd0d8.jpg" alt="CalorieTracker" className="w-8 h-8 rounded" />
-            <span className="font-bold text-xl text-primary font-['Montserrat']">CalorieTracker</span>
+            <img src="https://cdn.poehali.dev/files/69c3d9e6-cc16-4908-8c46-03067a2c1896.jpeg" alt="ПП ПРИВЕТ" className="w-10 h-10" />
+            <span className="font-bold text-xl text-primary font-['Montserrat']">ПП ПРИВЕТ</span>
           </div>
           <div className="hidden md:flex items-center gap-6">
             <a href="#how-it-works" className="text-muted-foreground hover:text-primary transition-colors">Как работает</a>
@@ -356,14 +356,14 @@ const Index = () => {
                 <Icon name="Mail" className="text-primary" />
               </div>
               <h3 className="font-semibold mb-2 font-['Montserrat']">Email</h3>
-              <p className="text-muted-foreground">partners@calorietracker.ru</p>
+              <p className="text-muted-foreground">partners@pprivet.ru</p>
             </div>
             <div className="text-center">
               <div className="w-12 h-12 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
                 <Icon name="MessageCircle" className="text-primary" />
               </div>
               <h3 className="font-semibold mb-2 font-['Montserrat']">Telegram</h3>
-              <p className="text-muted-foreground">@calorietracker_support</p>
+              <p className="text-muted-foreground">@pprivet_support</p>
             </div>
             <div className="text-center">
               <div className="w-12 h-12 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
@@ -381,11 +381,11 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center gap-2 mb-4 md:mb-0">
-              <img src="/img/be2490ad-cc94-4352-8bcf-139806dfd0d8.jpg" alt="CalorieTracker" className="w-6 h-6 rounded" />
-              <span className="font-bold text-primary font-['Montserrat']">CalorieTracker</span>
+              <img src="https://cdn.poehali.dev/files/69c3d9e6-cc16-4908-8c46-03067a2c1896.jpeg" alt="ПП ПРИВЕТ" className="w-8 h-8" />
+              <span className="font-bold text-primary font-['Montserrat']">ПП ПРИВЕТ</span>
             </div>
             <p className="text-muted-foreground text-sm">
-              © 2024 CalorieTracker. Все права защищены.
+              © 2024 ПП ПРИВЕТ. Все права защищены.
             </p>
           </div>
         </div>
