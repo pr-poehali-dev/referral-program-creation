@@ -24,24 +24,62 @@ const Index = () => {
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <section className="py-20 px-4 text-center bg-gradient-to-b from-secondary/20 to-white">
-        <div className="container mx-auto max-w-4xl">
-          <Badge className="mb-6 bg-accent text-accent-foreground">🥑 Реферальная программа</Badge>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-foreground font-['Montserrat']">
-Зарабатывайте до <span className="text-primary">50%</span> с каждого клиента
+      {/* Premium Hero Section */}
+      <section className="relative py-24 px-4 text-center overflow-hidden">
+        {/* Animated background elements */}
+        <div className="absolute inset-0">
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/8 via-transparent to-secondary/8"></div>
+          <div className="absolute top-20 left-10 w-96 h-96 bg-gradient-to-r from-primary/15 to-secondary/15 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-10 w-80 h-80 bg-gradient-to-l from-secondary/15 to-primary/15 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
+          {/* Floating particles */}
+          <div className="absolute top-32 left-1/4 w-2 h-2 bg-primary/40 rounded-full animate-bounce"></div>
+          <div className="absolute top-48 right-1/3 w-3 h-3 bg-secondary/40 rounded-full animate-bounce" style={{animationDelay: '0.5s'}}></div>
+          <div className="absolute bottom-40 left-1/3 w-1.5 h-1.5 bg-primary/40 rounded-full animate-bounce" style={{animationDelay: '1.5s'}}></div>
+        </div>
+        
+        <div className="relative z-10 container mx-auto max-w-5xl">
+          {/* Premium badge with glow */}
+          <div className="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-primary/20 via-primary/10 to-secondary/20 border border-primary/30 mb-10 backdrop-blur-sm shadow-lg">
+            <div className="w-2 h-2 bg-primary rounded-full animate-pulse mr-3"></div>
+            <span className="text-sm font-bold text-primary tracking-wide">🚀 Эксклюзивная партнерская программа</span>
+          </div>
+          
+          <h1 className="text-6xl md:text-7xl lg:text-8xl font-black mb-8 text-foreground font-['Montserrat'] leading-tight">
+            <span className="block">Зарабатывайте до</span>
+            <span className="bg-gradient-to-r from-primary via-primary to-secondary bg-clip-text text-transparent text-8xl md:text-9xl font-black tracking-tight">50%</span>
+            <span className="block text-4xl md:text-5xl font-semibold text-muted-foreground mt-2">с каждого клиента</span>
           </h1>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Рекомендуйте наше приложение для подсчета калорий по фото и получайте стабильный доход от каждого приведенного пользователя
+          
+          <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-4xl mx-auto leading-relaxed font-['Open_Sans']">
+            Рекомендуйте наше революционное приложение для подсчета калорий по фото и 
+            <span className="text-foreground font-semibold">получайте стабильный доход</span> от каждого приведенного пользователя
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6">
-              <Icon name="Zap" className="mr-2" />
-              Стать партнером
+          
+          {/* Premium stats */}
+          <div className="flex flex-wrap justify-center gap-8 mb-12">
+            <div className="flex items-center gap-3 bg-gradient-to-r from-card/80 to-card/60 backdrop-blur-md px-6 py-3 rounded-2xl border border-border/50 shadow-lg">
+              <div className="w-3 h-3 bg-gradient-to-r from-green-400 to-green-600 rounded-full animate-pulse shadow-lg"></div>
+              <span className="font-semibold text-foreground">97% точность AI</span>
+            </div>
+            <div className="flex items-center gap-3 bg-gradient-to-r from-card/80 to-card/60 backdrop-blur-md px-6 py-3 rounded-2xl border border-border/50 shadow-lg">
+              <div className="w-3 h-3 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full animate-pulse shadow-lg"></div>
+              <span className="font-semibold text-foreground">50,000+ продуктов</span>
+            </div>
+            <div className="flex items-center gap-3 bg-gradient-to-r from-card/80 to-card/60 backdrop-blur-md px-6 py-3 rounded-2xl border border-border/50 shadow-lg">
+              <div className="w-3 h-3 bg-gradient-to-r from-purple-400 to-purple-600 rounded-full animate-pulse shadow-lg"></div>
+              <span className="font-semibold text-foreground">Пожизненные комиссии</span>
+            </div>
+          </div>
+          
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+            <Button size="lg" className="relative group bg-gradient-to-r from-primary via-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-primary-foreground text-xl px-12 py-6 font-bold shadow-2xl hover:shadow-primary/25 transform hover:scale-105 transition-all duration-500 border border-primary/20 overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-r from-white/20 via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <Icon name="Zap" className="mr-3 text-2xl" />
+              <span className="relative z-10">Стать партнером</span>
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-6">
-              <Icon name="Play" className="mr-2" />
-Посмотреть демо
+            <Button variant="outline" size="lg" className="text-xl px-12 py-6 border-2 border-primary/40 hover:border-primary hover:bg-primary/10 font-bold backdrop-blur-sm transform hover:scale-105 transition-all duration-500 shadow-lg hover:shadow-xl">
+              <Icon name="Play" className="mr-3 text-2xl" />
+              Посмотреть демо
             </Button>
           </div>
         </div>
@@ -55,79 +93,100 @@ const Index = () => {
             <p className="text-muted-foreground text-lg">Идеально для профессионалов в сфере здоровья и фитнеса</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="w-16 h-16 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <Icon name="Dumbbell" className="text-primary" size={32} />
+            <Card className="text-center group relative overflow-hidden bg-gradient-to-br from-card via-card to-card/95 border-border/50 hover:border-primary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10 transform hover:scale-[1.02]">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <CardHeader className="relative z-10">
+                <div className="w-20 h-20 bg-gradient-to-br from-primary/20 to-primary/10 rounded-2xl mx-auto mb-6 flex items-center justify-center shadow-lg group-hover:shadow-primary/20 transform group-hover:scale-110 transition-all duration-500">
+                  <Icon name="Dumbbell" className="text-primary group-hover:scale-110 transition-transform duration-500" size={36} />
                 </div>
-                <CardTitle className="font-['Montserrat']">Фитнес-тренеры</CardTitle>
-                <CardDescription>Предлагайте клиентам точный подсчет КБЖУ по фото и получайте 250₽ с каждой месячной подписки</CardDescription>
+                <CardTitle className="font-['Montserrat'] text-2xl font-bold bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text mb-3">Фитнес-тренеры</CardTitle>
+                <CardDescription className="text-base leading-relaxed">Предлагайте клиентам точный подсчет КБЖУ по фото и получайте 250₽ с каждой месячной подписки</CardDescription>
               </CardHeader>
-              <CardContent>
-                <ul className="text-left space-y-2 text-sm">
-                  <li className="flex items-center gap-2">
-                    <Icon name="Check" className="text-primary" size={16} />
-50% комиссия с каждого клиента
+              <CardContent className="relative z-10">
+                <ul className="text-left space-y-4 text-sm">
+                  <li className="flex items-center gap-3 bg-gradient-to-r from-background/50 to-transparent px-4 py-3 rounded-xl border border-border/30">
+                    <div className="w-6 h-6 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center flex-shrink-0">
+                      <Icon name="Check" className="text-white" size={14} />
+                    </div>
+                    <span className="font-medium">50% комиссия с каждого клиента</span>
                   </li>
-                  <li className="flex items-center gap-2">
-                    <Icon name="Check" className="text-primary" size={16} />
-Точность подсчета калорий 97%
+                  <li className="flex items-center gap-3 bg-gradient-to-r from-background/50 to-transparent px-4 py-3 rounded-xl border border-border/30">
+                    <div className="w-6 h-6 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center flex-shrink-0">
+                      <Icon name="Check" className="text-white" size={14} />
+                    </div>
+                    <span className="font-medium">Точность подсчета калорий 97%</span>
                   </li>
-                  <li className="flex items-center gap-2">
-                    <Icon name="Check" className="text-primary" size={16} />
-Повышение удержания клиентов на 40%
+                  <li className="flex items-center gap-3 bg-gradient-to-r from-background/50 to-transparent px-4 py-3 rounded-xl border border-border/30">
+                    <div className="w-6 h-6 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center flex-shrink-0">
+                      <Icon name="Check" className="text-white" size={14} />
+                    </div>
+                    <span className="font-medium">Повышение удержания клиентов на 40%</span>
                   </li>
                 </ul>
               </CardContent>
             </Card>
 
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="w-16 h-16 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <Icon name="Apple" className="text-primary" size={32} />
+            <Card className="text-center group relative overflow-hidden bg-gradient-to-br from-card via-card to-card/95 border-border/50 hover:border-secondary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-secondary/10 transform hover:scale-[1.02]">
+              <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <CardHeader className="relative z-10">
+                <div className="w-20 h-20 bg-gradient-to-br from-secondary/20 to-secondary/10 rounded-2xl mx-auto mb-6 flex items-center justify-center shadow-lg group-hover:shadow-secondary/20 transform group-hover:scale-110 transition-all duration-500">
+                  <Icon name="Apple" className="text-secondary group-hover:scale-110 transition-transform duration-500" size={36} />
                 </div>
-                <CardTitle className="font-['Montserrat']">Нутрициологи</CardTitle>
-                <CardDescription>Дополните консультации высокотехнологичным инструментом анализа питания</CardDescription>
+                <CardTitle className="font-['Montserrat'] text-2xl font-bold bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text mb-3">Нутрициологи</CardTitle>
+                <CardDescription className="text-base leading-relaxed">Дополните консультации высокотехнологичным инструментом анализа питания</CardDescription>
               </CardHeader>
-              <CardContent>
-                <ul className="text-left space-y-2 text-sm">
-                  <li className="flex items-center gap-2">
-                    <Icon name="Check" className="text-primary" size={16} />
-2000₽ за каждую годовую подписку
+              <CardContent className="relative z-10">
+                <ul className="text-left space-y-4 text-sm">
+                  <li className="flex items-center gap-3 bg-gradient-to-r from-background/50 to-transparent px-4 py-3 rounded-xl border border-border/30">
+                    <div className="w-6 h-6 bg-gradient-to-r from-secondary to-primary rounded-full flex items-center justify-center flex-shrink-0">
+                      <Icon name="Check" className="text-white" size={14} />
+                    </div>
+                    <span className="font-medium">2000₽ за каждую годовую подписку</span>
                   </li>
-                  <li className="flex items-center gap-2">
-                    <Icon name="Check" className="text-primary" size={16} />
-База данных 50,000+ продуктов
+                  <li className="flex items-center gap-3 bg-gradient-to-r from-background/50 to-transparent px-4 py-3 rounded-xl border border-border/30">
+                    <div className="w-6 h-6 bg-gradient-to-r from-secondary to-primary rounded-full flex items-center justify-center flex-shrink-0">
+                      <Icon name="Check" className="text-white" size={14} />
+                    </div>
+                    <span className="font-medium">База данных 50,000+ продуктов</span>
                   </li>
-                  <li className="flex items-center gap-2">
-                    <Icon name="Check" className="text-primary" size={16} />
-Детальная аналитика для пациентов
+                  <li className="flex items-center gap-3 bg-gradient-to-r from-background/50 to-transparent px-4 py-3 rounded-xl border border-border/30">
+                    <div className="w-6 h-6 bg-gradient-to-r from-secondary to-primary rounded-full flex items-center justify-center flex-shrink-0">
+                      <Icon name="Check" className="text-white" size={14} />
+                    </div>
+                    <span className="font-medium">Детальная аналитика для пациентов</span>
                   </li>
                 </ul>
               </CardContent>
             </Card>
 
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="w-16 h-16 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <Icon name="Users" className="text-primary" size={32} />
+            <Card className="text-center group relative overflow-hidden bg-gradient-to-br from-card via-card to-card/95 border-border/50 hover:border-accent/30 transition-all duration-500 hover:shadow-2xl hover:shadow-accent/10 transform hover:scale-[1.02]">
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <CardHeader className="relative z-10">
+                <div className="w-20 h-20 bg-gradient-to-br from-accent/20 to-accent/10 rounded-2xl mx-auto mb-6 flex items-center justify-center shadow-lg group-hover:shadow-accent/20 transform group-hover:scale-110 transition-all duration-500">
+                  <Icon name="Users" className="text-accent group-hover:scale-110 transition-transform duration-500" size={36} />
                 </div>
-                <CardTitle className="font-['Montserrat']">ЗОЖ-блогеры</CardTitle>
-                <CardDescription>Монетизируйте своих подписчиков через полезное приложение для правильного питания</CardDescription>
+                <CardTitle className="font-['Montserrat'] text-2xl font-bold bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text mb-3">ЗОЖ-блогеры</CardTitle>
+                <CardDescription className="text-base leading-relaxed">Монетизируйте своих подписчиков через полезное приложение для правильного питания</CardDescription>
               </CardHeader>
-              <CardContent>
-                <ul className="text-left space-y-2 text-sm">
-                  <li className="flex items-center gap-2">
-                    <Icon name="Check" className="text-primary" size={16} />
-Высокая конверсия в оплату 23%
+              <CardContent className="relative z-10">
+                <ul className="text-left space-y-4 text-sm">
+                  <li className="flex items-center gap-3 bg-gradient-to-r from-background/50 to-transparent px-4 py-3 rounded-xl border border-border/30">
+                    <div className="w-6 h-6 bg-gradient-to-r from-accent to-secondary rounded-full flex items-center justify-center flex-shrink-0">
+                      <Icon name="Check" className="text-white" size={14} />
+                    </div>
+                    <span className="font-medium">Высокая конверсия в оплату 23%</span>
                   </li>
-                  <li className="flex items-center gap-2">
-                    <Icon name="Check" className="text-primary" size={16} />
-Средний чек подписчика 2847₽
+                  <li className="flex items-center gap-3 bg-gradient-to-r from-background/50 to-transparent px-4 py-3 rounded-xl border border-border/30">
+                    <div className="w-6 h-6 bg-gradient-to-r from-accent to-secondary rounded-full flex items-center justify-center flex-shrink-0">
+                      <Icon name="Check" className="text-white" size={14} />
+                    </div>
+                    <span className="font-medium">Средний чек подписчика 2847₽</span>
                   </li>
-                  <li className="flex items-center gap-2">
-                    <Icon name="Check" className="text-primary" size={16} />
-Маркетинговая поддержка 24/7
+                  <li className="flex items-center gap-3 bg-gradient-to-r from-background/50 to-transparent px-4 py-3 rounded-xl border border-border/30">
+                    <div className="w-6 h-6 bg-gradient-to-r from-accent to-secondary rounded-full flex items-center justify-center flex-shrink-0">
+                      <Icon name="Check" className="text-white" size={14} />
+                    </div>
+                    <span className="font-medium">Маркетинговая поддержка 24/7</span>
                   </li>
                 </ul>
               </CardContent>
@@ -320,23 +379,64 @@ const Index = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 px-4 bg-gradient-to-r from-primary to-accent">
-        <div className="container mx-auto text-center">
-          <img src="/img/c04a3e9c-a4e8-43e0-b90a-f1fd3e950bce.jpg" alt="Success" className="w-32 h-32 rounded-full mx-auto mb-8 shadow-lg" />
-          <h2 className="text-4xl font-bold mb-6 text-white font-['Montserrat']">
-            Начните зарабатывать уже сегодня
+      {/* Premium CTA Section */}
+      <section className="relative py-24 px-4 overflow-hidden">
+        {/* Premium background with multiple gradients */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/90 to-secondary"></div>
+        <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-white/10"></div>
+        
+        {/* Animated background elements */}
+        <div className="absolute top-10 left-10 w-80 h-80 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-10 right-10 w-96 h-96 bg-white/5 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
+        
+        {/* Floating particles */}
+        <div className="absolute top-20 right-1/4 w-2 h-2 bg-white/40 rounded-full animate-bounce"></div>
+        <div className="absolute bottom-32 left-1/3 w-3 h-3 bg-white/30 rounded-full animate-bounce" style={{animationDelay: '1s'}}></div>
+        <div className="absolute top-40 left-1/4 w-1.5 h-1.5 bg-white/40 rounded-full animate-bounce" style={{animationDelay: '0.5s'}}></div>
+        
+        <div className="relative z-10 container mx-auto text-center">
+          {/* Premium image with glow effect */}
+          <div className="relative inline-block mb-12">
+            <div className="absolute inset-0 bg-white/20 rounded-full blur-xl scale-110"></div>
+            <img src="/img/c04a3e9c-a4e8-43e0-b90a-f1fd3e950bce.jpg" alt="Success" className="relative w-40 h-40 rounded-full mx-auto shadow-2xl border-4 border-white/20" />
+            <div className="absolute -top-2 -right-2 w-8 h-8 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center shadow-lg">
+              <span className="text-white text-xl">✨</span>
+            </div>
+          </div>
+          
+          <h2 className="text-5xl md:text-6xl font-black mb-8 text-white font-['Montserrat'] leading-tight">
+            <span className="block">Начните зарабатывать</span>
+            <span className="bg-gradient-to-r from-white via-white to-yellow-200 bg-clip-text text-transparent">уже сегодня</span>
           </h2>
-          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Присоединяйтесь к успешным партнерам и получайте стабильный доход от рекомендаций качественного продукта
+          
+          <p className="text-xl md:text-2xl text-white/95 mb-12 max-w-4xl mx-auto leading-relaxed">
+            Присоединяйтесь к <span className="font-bold text-white">успешным партнерам</span> и получайте стабильный доход от рекомендаций качественного продукта
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-6">
-              <Icon name="Rocket" className="mr-2" />
-              Стать партнером бесплатно
+          
+          {/* Premium success metrics */}
+          <div className="flex flex-wrap justify-center gap-8 mb-12">
+            <div className="bg-white/20 backdrop-blur-md px-6 py-4 rounded-2xl border border-white/30 shadow-lg">
+              <div className="text-3xl font-bold text-white mb-1">500+</div>
+              <div className="text-white/80 text-sm">Активных партнеров</div>
+            </div>
+            <div className="bg-white/20 backdrop-blur-md px-6 py-4 rounded-2xl border border-white/30 shadow-lg">
+              <div className="text-3xl font-bold text-white mb-1">2.8M₽</div>
+              <div className="text-white/80 text-sm">Средний месячный доход</div>
+            </div>
+            <div className="bg-white/20 backdrop-blur-md px-6 py-4 rounded-2xl border border-white/30 shadow-lg">
+              <div className="text-3xl font-bold text-white mb-1">97%</div>
+              <div className="text-white/80 text-sm">Удовлетворенность</div>
+            </div>
+          </div>
+          
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+            <Button size="lg" className="relative group bg-white text-primary hover:bg-white/95 text-xl px-12 py-6 font-bold shadow-2xl hover:shadow-white/25 transform hover:scale-105 transition-all duration-500 border-2 border-white/20 overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-secondary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <Icon name="Rocket" className="mr-3 text-2xl relative z-10" />
+              <span className="relative z-10">Стать партнером бесплатно</span>
             </Button>
-            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10 text-lg px-8 py-6">
-              <Icon name="MessageCircle" className="mr-2" />
+            <Button variant="outline" size="lg" className="border-2 border-white/40 text-white hover:bg-white/15 text-xl px-12 py-6 font-bold backdrop-blur-sm transform hover:scale-105 transition-all duration-500 shadow-lg">
+              <Icon name="MessageCircle" className="mr-3 text-2xl" />
               Задать вопрос
             </Button>
           </div>
