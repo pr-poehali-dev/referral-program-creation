@@ -44,10 +44,9 @@ const Index = () => {
             <span className="text-sm font-bold text-primary tracking-wide">🚀 Эксклюзивная партнерская программа</span>
           </div>
           
-          <h1 className="text-6xl md:text-7xl lg:text-8xl font-black mb-8 text-foreground font-['Montserrat'] leading-tight">
-            <span className="block">Зарабатывайте до</span>
-            <span className="bg-gradient-to-r from-primary via-primary to-secondary bg-clip-text text-transparent text-8xl md:text-9xl font-black tracking-tight">50%</span>
-            <span className="block text-4xl md:text-5xl font-semibold text-muted-foreground mt-2">с каждого клиента</span>
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-black mb-8 text-foreground font-['Montserrat'] leading-tight">
+            <span className="block">Зарабатывайте до <span className="bg-gradient-to-r from-primary via-primary to-secondary bg-clip-text text-transparent">50%</span></span>
+            <span className="block text-3xl md:text-4xl lg:text-5xl font-semibold text-muted-foreground mt-2">с каждого клиента</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-4xl mx-auto leading-relaxed font-['Open_Sans']">
