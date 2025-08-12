@@ -203,7 +203,7 @@ const Index = () => {
           </div>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <img src="/img/6f6a18eb-e07f-4808-9033-5f194d532963.jpg" alt="Приложение" className="w-full rounded-lg shadow-lg" />
+              <img src="/img/6f6a18eb-e07f-4808-9033-5f194d532963.jpg" alt="Приложение" className="w-full rounded-lg shadow-lg mx-0 my-0 px-[30px]" />
             </div>
             <div className="space-y-8">
               <div className="flex gap-4">
