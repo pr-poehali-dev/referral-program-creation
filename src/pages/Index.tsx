@@ -3,8 +3,17 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
+import { useState } from "react";
 
 const Index = () => {
+  const [activeFeature, setActiveFeature] = useState(1);
+  
+  const mockups = {
+    1: "/img/6f6a18eb-e07f-4808-9033-5f194d532963.jpg", // КБЖУ в 1 клик
+    2: "/img/6f6a18eb-e07f-4808-9033-5f194d532963.jpg", // Анализ питания
+    3: "/img/6f6a18eb-e07f-4808-9033-5f194d532963.jpg", // Персональные рекомендации
+    4: "/img/6f6a18eb-e07f-4808-9033-5f194d532963.jpg", // Легко в использовании
+  };
   return (
     <div className="min-h-screen bg-background">
       {/* Navigation */}
@@ -202,36 +211,131 @@ const Index = () => {
             <p className="text-foreground/80 text-xl font-elegant leading-relaxed">Прорывная AI-система с точностью 97% для анализа питания</p>
           </div>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <img src="/img/6f6a18eb-e07f-4808-9033-5f194d532963.jpg" alt="Приложение" className="w-full rounded-lg shadow-lg mx-0 my-0 px-[30px]" />
+            {/* Интерактивный мокап */}
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-xl blur-xl"></div>
+              <img 
+                src={mockups[activeFeature]} 
+                alt="Приложение" 
+                className="relative w-full rounded-xl shadow-2xl border border-border/20 transition-all duration-500 transform hover:scale-[1.02]" 
+              />
             </div>
-            <div className="space-y-8">
-              <div className="flex gap-4">
-                <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">1</div>
-                <div>
-                  <h3 className="font-semibold text-lg mb-2 font-['Montserrat']">Определять КБЖУ в 1 клик</h3>
-                  <p className="text-muted-foreground">Отправляйте фото еды в бота и он рассчитает кбжу блюда с точностью 95%</p>
+            
+            {/* Интерактивные пункты */}
+            <div className="space-y-6">
+              <div 
+                className={`group cursor-pointer p-6 rounded-2xl border-2 transition-all duration-500 ${
+                  activeFeature === 1 
+                    ? 'bg-gradient-to-r from-primary/10 to-secondary/10 border-primary/30 shadow-lg shadow-primary/20' 
+                    : 'bg-card/50 border-border/30 hover:bg-card hover:border-primary/20'
+                }`}
+                onClick={() => setActiveFeature(1)}
+              >
+                <div className="flex gap-4 items-start">
+                  <div className={`w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg transition-all duration-500 ${
+                    activeFeature === 1 
+                      ? 'bg-gradient-to-r from-primary to-secondary text-white shadow-lg' 
+                      : 'bg-muted text-muted-foreground group-hover:bg-primary/20 group-hover:text-primary'
+                  }`}>
+                    1
+                  </div>
+                  <div className="flex-1">
+                    <h3 className={`font-bold text-xl mb-3 font-['Montserrat'] transition-colors duration-500 ${
+                      activeFeature === 1 ? 'text-primary' : 'text-foreground group-hover:text-primary'
+                    }`}>
+                      Определять КБЖУ в 1 клик
+                    </h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      Отправляйте фото еды в бота и он рассчитает кбжу блюда с точностью 95%
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div className="flex gap-4">
-                <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">2</div>
-                <div>
-                  <h3 className="font-semibold text-lg mb-2 font-['Montserrat']">Ежедневный и еженедельный анализ</h3>
-                  <p className="text-muted-foreground">Отслеживаете дневной и еженедельный кбжу прямо в боте</p>
+              
+              <div 
+                className={`group cursor-pointer p-6 rounded-2xl border-2 transition-all duration-500 ${
+                  activeFeature === 2 
+                    ? 'bg-gradient-to-r from-primary/10 to-secondary/10 border-primary/30 shadow-lg shadow-primary/20' 
+                    : 'bg-card/50 border-border/30 hover:bg-card hover:border-primary/20'
+                }`}
+                onClick={() => setActiveFeature(2)}
+              >
+                <div className="flex gap-4 items-start">
+                  <div className={`w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg transition-all duration-500 ${
+                    activeFeature === 2 
+                      ? 'bg-gradient-to-r from-primary to-secondary text-white shadow-lg' 
+                      : 'bg-muted text-muted-foreground group-hover:bg-primary/20 group-hover:text-primary'
+                  }`}>
+                    2
+                  </div>
+                  <div className="flex-1">
+                    <h3 className={`font-bold text-xl mb-3 font-['Montserrat'] transition-colors duration-500 ${
+                      activeFeature === 2 ? 'text-primary' : 'text-foreground group-hover:text-primary'
+                    }`}>
+                      Ежедневный и еженедельный анализ
+                    </h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      Отслеживаете дневной и еженедельный кбжу прямо в боте
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div className="flex gap-4">
-                <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">3</div>
-                <div>
-                  <h3 className="font-semibold text-lg mb-2 font-['Montserrat']">Персональные рекомендации</h3>
-                  <p className="text-muted-foreground">Бот проанализирует ваш рацион и расскажет, какие продукты нужно добавить, а от чего лучше воздержаться</p>
+              
+              <div 
+                className={`group cursor-pointer p-6 rounded-2xl border-2 transition-all duration-500 ${
+                  activeFeature === 3 
+                    ? 'bg-gradient-to-r from-primary/10 to-secondary/10 border-primary/30 shadow-lg shadow-primary/20' 
+                    : 'bg-card/50 border-border/30 hover:bg-card hover:border-primary/20'
+                }`}
+                onClick={() => setActiveFeature(3)}
+              >
+                <div className="flex gap-4 items-start">
+                  <div className={`w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg transition-all duration-500 ${
+                    activeFeature === 3 
+                      ? 'bg-gradient-to-r from-primary to-secondary text-white shadow-lg' 
+                      : 'bg-muted text-muted-foreground group-hover:bg-primary/20 group-hover:text-primary'
+                  }`}>
+                    3
+                  </div>
+                  <div className="flex-1">
+                    <h3 className={`font-bold text-xl mb-3 font-['Montserrat'] transition-colors duration-500 ${
+                      activeFeature === 3 ? 'text-primary' : 'text-foreground group-hover:text-primary'
+                    }`}>
+                      Персональные рекомендации
+                    </h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      Бот проанализирует ваш рацион и расскажет, какие продукты нужно добавить, а от чего лучше воздержаться
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div className="flex gap-4">
-                <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">4</div>
-                <div>
-                  <h3 className="font-semibold text-lg mb-2 font-['Montserrat']">Максимально легко в использовании</h3>
-                  <p className="text-muted-foreground">Не нужно скачивать отдельные приложения, персональный нутрициолог - уже в вашем кармане</p>
+              
+              <div 
+                className={`group cursor-pointer p-6 rounded-2xl border-2 transition-all duration-500 ${
+                  activeFeature === 4 
+                    ? 'bg-gradient-to-r from-primary/10 to-secondary/10 border-primary/30 shadow-lg shadow-primary/20' 
+                    : 'bg-card/50 border-border/30 hover:bg-card hover:border-primary/20'
+                }`}
+                onClick={() => setActiveFeature(4)}
+              >
+                <div className="flex gap-4 items-start">
+                  <div className={`w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg transition-all duration-500 ${
+                    activeFeature === 4 
+                      ? 'bg-gradient-to-r from-primary to-secondary text-white shadow-lg' 
+                      : 'bg-muted text-muted-foreground group-hover:bg-primary/20 group-hover:text-primary'
+                  }`}>
+                    4
+                  </div>
+                  <div className="flex-1">
+                    <h3 className={`font-bold text-xl mb-3 font-['Montserrat'] transition-colors duration-500 ${
+                      activeFeature === 4 ? 'text-primary' : 'text-foreground group-hover:text-primary'
+                    }`}>
+                      Максимально легко в использовании
+                    </h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      Не нужно скачивать отдельные приложения, персональный нутрициолог - уже в вашем кармане
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
