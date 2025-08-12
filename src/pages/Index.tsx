@@ -12,7 +12,7 @@ const Index = () => {
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <img src="https://cdn.poehali.dev/files/69c3d9e6-cc16-4908-8c46-03067a2c1896.jpeg" alt="ПП ПРИВЕТ" className="w-10 h-10" />
-            <span className="font-bold text-2xl text-primary font-premium-serif tracking-tight">ПП ПРИВЕТ</span>
+            <span className="font-bold text-xl text-primary font-['Montserrat']">ПП ПРИВЕТ</span>
           </div>
           <div className="hidden md:flex items-center gap-6">
             <a href="#how-it-works" className="text-muted-foreground hover:text-primary transition-colors">Как работает</a>
@@ -20,7 +20,7 @@ const Index = () => {
             <a href="#faq" className="text-muted-foreground hover:text-primary transition-colors">FAQ</a>
             <a href="#contacts" className="text-muted-foreground hover:text-primary transition-colors">Контакты</a>
           </div>
-          <Button className="gradient-luxury hover:shadow-luxury text-white font-premium-sans font-semibold tracking-wide transition-all duration-500 transform hover:scale-105">Получить доступ</Button>
+          <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">Начать зарабатывать</Button>
         </div>
       </nav>
 
@@ -28,20 +28,20 @@ const Index = () => {
       <section className="py-20 px-4 text-center bg-gradient-to-b from-secondary/20 to-white">
         <div className="container mx-auto max-w-4xl">
           <Badge className="mb-6 bg-accent text-accent-foreground">🥑 Реферальная программа</Badge>
-          <h1 className="text-6xl md:text-8xl font-bold mb-8 font-premium-serif gradient-text-luxury text-shadow-elegant leading-tight">
-Получайте до <span className="relative inline-block"><span className="gradient-text-luxury text-7xl md:text-9xl font-black">50%</span><span className="absolute -inset-1 gradient-luxury rounded-2xl blur-xl opacity-30 animate-pulse"></span></span> от каждой продажи
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-foreground font-['Montserrat']">
+Зарабатывайте до <span className="text-primary">50%</span> с каждого клиента
           </h1>
-          <p className="text-xl md:text-2xl text-foreground/80 mb-12 max-w-4xl mx-auto font-elegant leading-relaxed tracking-wide">
+          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Рекомендуйте наше приложение для подсчета калорий по фото и получайте стабильный доход от каждого приведенного пользователя
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="gradient-luxury hover:shadow-luxury text-white text-xl px-12 py-8 font-premium-sans font-bold tracking-wide transition-all duration-500 transform hover:scale-105 hover:-translate-y-1 shadow-2xl">
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6">
               <Icon name="Zap" className="mr-2" />
               Стать партнером
             </Button>
-            <Button variant="outline" size="lg" className="text-xl px-12 py-8 border-2 border-primary/40 hover:border-primary hover:bg-primary/5 font-premium-sans font-semibold tracking-wide transition-all duration-500 transform hover:scale-105 hover:shadow-xl backdrop-blur-sm">
+            <Button variant="outline" size="lg" className="text-lg px-8 py-6">
               <Icon name="Play" className="mr-2" />
-Узнать подробнее
+Посмотреть демо
             </Button>
           </div>
         </div>
@@ -51,8 +51,8 @@ const Index = () => {
       <section id="audience" className="py-20 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold mb-6 font-premium-serif gradient-text-luxury text-shadow-elegant">Кто сможет заработать</h2>
-            <p className="text-foreground/80 text-xl font-elegant leading-relaxed">Эксклюзивная возможность для лидеров мнений в сфере здоровья и красоты</p>
+            <h2 className="text-4xl font-bold mb-4 text-foreground font-['Montserrat']">Кому подойдет</h2>
+            <p className="text-muted-foreground text-lg">Идеально для профессионалов в сфере здоровья и фитнеса</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="text-center hover:shadow-lg transition-shadow">
@@ -60,8 +60,8 @@ const Index = () => {
                 <div className="w-16 h-16 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
                   <Icon name="Dumbbell" className="text-primary" size={32} />
                 </div>
-                <CardTitle className="font-premium-serif text-2xl gradient-text-luxury">Персональные тренеры</CardTitle>
-                <CardDescription className="font-elegant text-base">Монетизируйте свою экспертность с помощью топ-технологий</CardDescription>
+                <CardTitle className="font-['Montserrat']">Фитнес-тренеры</CardTitle>
+                <CardDescription>Помогайте клиентам отслеживать питание и зарабатывайте на этом</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="text-left space-y-2 text-sm">
